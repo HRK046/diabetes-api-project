@@ -33,7 +33,7 @@ class DiagnosisRequest(BaseModel):
 
 # --- 3. LIME Setup ---
 explainer = lime_tabular.LimeTabularExplainer(
-    training_data=train_sample.values,
+    training_data=train_sample,
     feature_names=cols,
     class_names=['Non-Diabetic', 'Diabetic'],
     mode='classification'
