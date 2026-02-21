@@ -69,7 +69,7 @@ def predict_diabetes(request: DiagnosisRequest):
         exp = explainer.explain_instance(
             input_scaled_det[0], 
             model_det.predict_proba, 
-            num_features=5
+            num_features=12
         )
         # Flutter UI ke liye data points
         result["xai_data"] = exp.as_list() 
