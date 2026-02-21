@@ -22,8 +22,8 @@ class DiagnosisRequest(BaseModel):
     BSR: float
     Systolic: float
     Diastolic: float
-    Peripheral_Neuropathy: float
     BMI: float
+    Peripheral_Neuropathy: float
     Delayed_Healing: float
     Genetic_Relation: float
     Frequent_Urination: float
